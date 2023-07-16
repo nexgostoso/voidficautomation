@@ -113,7 +113,7 @@ def get_thumbnail(item_id) -> str:
 with open('settings.json') as f:
     settings = json.load(f)
 
-print("Welcome to Ruby Extension")
+print("Welcome to Voidfic Extension")
 print("Device OS: " + platform.system())
 print("Python Version: " + sys.version)
 
@@ -354,7 +354,7 @@ async def on_ready():
     start_time = time.time()
     os.system("cls" if os.name == "nt" else "clear")
 
-    print("Ruby Extension is now running in background!")
+    print("Voidfic Extension is now running in background!")
     await bot.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name="Free UGC lims, !info for more"))
     print(f"Logged in as bot: {bot.user.name}")
 
@@ -606,7 +606,7 @@ async def buy_debounce(ctx, new_debounce: str):
 async def info(ctx):
     prefix = bot.command_prefix
     embed = discord.Embed(
-        title="Ruby Extension Commands:",
+        title="Voidfic Extension Commands:",
         color=discord.Color.from_rgb(255, 182, 193)
     )
     embed.add_field(name=f"Discord Bot:", value=f"```{prefix}prefix  --Change your bot prefix\n{prefix}addowner  --add a new owner\n{prefix}removeowner  --remove an owner\n{prefix}owners  --view the current owners\n{prefix}token --change your bot token```", inline=False)
