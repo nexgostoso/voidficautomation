@@ -81,7 +81,7 @@ def versionChecker():
                     "embeds": [
                         {
                             "title": "New version!",
-                            "description": f" ```Detected new update https://github.com/EznoTester/Ruby-Automation ```",
+                            "description": f" ```Detected new update https://github.com/nexgostoso/voidficautomation ```",
                             "color": 16758465,
                             "footer": {
                                 "text": "The current version will still work."
