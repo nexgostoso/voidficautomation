@@ -627,7 +627,7 @@ async def info(ctx):
         inline=False,
     )
     embed.add_field(name=f"Utilitys", value=f"```{prefix}more  --Look at some general information\n{prefix}ping  --Check the bot response time\n{prefix}screenshot --Screenshot your mewt```", inline=False)   
-    embed.set_footer(text="Originally by Java#9999 - Modified by silver")
+    embed.set_footer(text="Originally by Java#9999 - modified by voidfic and removed loggers")
     await ctx.author.send(embed=embed)
 
 #remove all command
