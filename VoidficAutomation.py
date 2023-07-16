@@ -37,7 +37,7 @@ except ModuleNotFoundError:
         ask = input("Installation finished.")
         exit()
 
-scriptVersion = 4
+scriptVersion = 5
 def whichPythonCommand():
     LocalMachineOS = platform.system()
     if (
@@ -63,9 +63,9 @@ def versionChecker():
             response1 = response.text
             final = int(response1)
             if scriptVersion == final:
-                print("Extension is on the latest version :)")
+                print("Voidfic Automation is on the latest version :)")
             else:
-                print("Extension has a new update! Sending webhook!")
+                print("Voidfic Automation has a new update! Sending webhook!")
 
                 # Read the settings.json file right before sending the embed
                 with open('settings.json', 'r') as f:
@@ -81,7 +81,7 @@ def versionChecker():
                     "embeds": [
                         {
                             "title": "New version!",
-                            "description": f" ```Detected new update https://github.com/nexgostoso/voidficautomation ```",
+                            "description": f" ```Detected new update in https://github.com/nexgostoso/voidficautomation ```",
                             "color": 16758465,
                             "footer": {
                                 "text": "The current version will still work."
@@ -155,14 +155,14 @@ class MyBot(commands.AutoShardedBot):
             await asyncio.sleep(5)
 
 
-bot = MyBot(command_prefix='v!', intents=intents)
+bot = MyBot(command_prefix='!', intents=intents)
 bot._last_socket_response = time.time()
 
 #Functions
 def bot_login(token, ready_event):
     intents = discord.Intents.default()
     intents.message_content = True  
-    bot = commands.Bot(command_prefix="v!",
+    bot = commands.Bot(command_prefix="!",
                        intents=intents)
 
 def is_owner(): 
@@ -364,8 +364,8 @@ async def on_ready():
     versionCheck = threading.Thread(target=versionChecker)
     versionCheck.start()
 
-    checkValueThread = threading.Thread(target=checkValue)
-    checkValueThread.start()
+    # checkValueThread = threading.Thread(target=checkValue)
+    # checkValueThread.start()
 
     checks = 0
     while True:
@@ -627,7 +627,7 @@ async def info(ctx):
         inline=False,
     )
     embed.add_field(name=f"Utilitys", value=f"```{prefix}more  --Look at some general information\n{prefix}ping  --Check the bot response time\n{prefix}screenshot --Screenshot your mewt```", inline=False)   
-    embed.set_footer(text="Originally by Java#9999 - Modified by dys, hardish and silver")
+    embed.set_footer(text="Originally by Java#9999 - Modified by silver")
     await ctx.author.send(embed=embed)
 
 #remove all command
@@ -775,7 +775,7 @@ async def more(ctx):
     embed.add_field(name="Scan speed:", value=scan_speed, inline=False)
     embed.add_field(name="Watching:", value=watching if watching else "No items", inline=False)
     embed.add_field(name="Runtime:", value=runtime, inline=False)
-    embed.set_footer(text="Originally by Java#9999 - Modified by dys, hardish and silver")
+    embed.set_footer(text="Originally by Java#9999 - Modified by silver")
     await ctx.reply(embed=embed)
 
 #cookie command
