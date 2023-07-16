@@ -81,7 +81,7 @@ def versionChecker():
                     "embeds": [
                         {
                             "title": "New version!",
-                            "description": f" ```Detected new update in https://github.com/nexgostoso/voidficautomation ```",
+                            "description": f" ```Detected new update in https://github.com/vodific/voidficautomation ```",
                             "color": 16758465,
                             "footer": {
                                 "text": "The current version will still work."
