@@ -1,0 +1,10 @@
+Thanks for using Extension Voidfic Automation. 
+An extension made by nex#0007 for Mewt
+
+How to use:
+-Drag the file "VoidficAutomation" in your mewt sniper folder
+-Click on your windows key and look for cmd, then open a cmd and execute this code:        pip install discord psutil robloxapi pyautogui
+-Then open VoidficAutomation and it will automatcally open mewt. Enjoy!
+
+
+Join my server:  https://discord.gg/qwGMEC9wHh
